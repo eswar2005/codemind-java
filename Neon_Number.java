@@ -2,15 +2,15 @@ import java.util.*;
 public class Es{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int s=sc.nextInt();
-        int sq,rem,sum=0;
-        sq=s*s;
-        while(sq!=0){
-        rem=sq%10;
-        sum=sum+rem;
-        sq=sq/10;
+        int n= sc.nextInt();
+        int q=n*n;
+        int r,sum=0;
+        while(q>0){
+            r=q%10;
+            sum=sum+r;
+            q/=10;
         }
-        if(s==sum){
+        if(n==sum){
             System.out.println("Neon Number");
         }
         else{
