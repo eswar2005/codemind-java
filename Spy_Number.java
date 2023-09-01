@@ -1,16 +1,15 @@
 import java.util.*;
-public class Es{
+public class SpyNumber{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int s=sc.nextInt();
-        //int l=
-        int sum=0;
+        int n = sc.nextInt();
+        int r,sum=0;
         int pro=1;
-        while(s!=0){
-        int rem=s%10;
-        sum=sum+rem;
-        pro=pro*rem;
-        s=s/10;
+        while(n>0){
+            r=n%10;
+            sum=sum+r;
+            pro=pro*r;
+            n/=10;
         }
         if(sum==pro){
             System.out.println("Spy Number");
